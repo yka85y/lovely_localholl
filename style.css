@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* ベース設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background-color: #121316;
+  color: #e4e6eb;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー（ヒーローエリア） */
+.hero {
+  background: linear-gradient(135deg, #1e2028 0%, #2b1d2e 100%);
+  border-bottom: 3px solid #e63946;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.hero-sub {
+  color: #e63946;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-lead {
+  font-size: 0.95rem;
+  color: #b8bcc8;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* セクション共通 */
+main {
+  padding: 48px 0;
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  border-left: 5px solid #e63946;
+  padding-left: 14px;
+  margin-bottom: 24px;
+}
+
+/* イントロダクション */
+.intro-section p {
+  background-color: #1c1e24;
+  padding: 24px;
+  border-radius: 8px;
+  color: #d0d3dc;
+}
+
+/* ライブハウスカード */
+.venue-card {
+  background-color: #1c1e24;
+  border: 1px solid #2e323d;
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.venue-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #2e323d;
+}
+
+.venue-name {
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+
+/* エリア別タグ */
+.area-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.area-hokuriku {
+  background-color: #2b7a78;
+}
+
+.area-chugoku {
+  background-color: #d97706;
+}
+
+.area-shikoku {
+  background-color: #2563eb;
+}
+
+.area-kyushu {
+  background-color: #dc2626;
+}
+
+/* カード内のレイアウト */
+.venue-body {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.venue-visual {
+  flex: 0 0 260px;
+}
+
+.venue-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+/* 写真がない場合のプレースホルダー */
+.photo-placeholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #282c37, #181a20);
+  border: 1px dashed #4b5263;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a92a6;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 0.95rem;
+}
+
+.venue-info {
+  flex: 1;
+}
+
+/* スペック表 */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #2e323d;
+  text-align: left;
+}
+
+.spec-table th {
+  width: 120px;
+  color: #9ca3af;
+  font-weight: normal;
+  background-color: #23262f;
+}
+
+.spec-table td {
+  color: #f3f4f6;
+}
+
+/* 推しポイント枠 */
+.recommend-box {
+  background-color: #252832;
+  padding: 16px;
+  border-radius: 6px;
+  border-left: 3px solid #e63946;
+}
+
+.recommend-box h4 {
+  font-size: 0.95rem;
+  color: #ff6b6b;
+  margin-bottom: 6px;
+}
+
+.recommend-box p {
+  font-size: 0.92rem;
+  color: #e4e6eb;
+}
+
+/* 豆知識リスト */
+.tips-list {
+  list-style: none;
+  background-color: #1c1e24;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #2e323d;
+}
+
+.tips-list li {
+  margin-bottom: 14px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.tips-list li:last-child {
+  margin-bottom: 0;
+}
+
+.tips-list li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #e63946;
+  font-size: 0.75rem;
+  top: 4px;
+}
+
+/* フッター */
+.footer {
+  background-color: #0d0e11;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+  color: #7c8290;
+  border-top: 1px solid #23262f;
+}
+
+/* スマホ対応（レスポンシブ） */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .venue-body {
+    flex-direction: column;
+  }
+
+  .venue-visual {
+    flex: none;
+    width: 100%;
+  }
+
+  .spec-table th {
+    width: 105px;
+  }
+}
+/* リンクの見た目調整（青色・下線を消してホバー時に少し薄くする） */
+.venue-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.venue-name a:hover {
+  opacity: 0.75;
+  border-bottom-color: currentColor;
+}
+
+/* 写真を枠内にきれいに収める設定 */
+.venue-visual img {
+  width: 100%;
+  height: 220px; /* お好みの高さに調整してください */
+  object-fit: cover; /* 比率を保ったまま枠いっぱいにトリミング */
+  border-radius: 8px;
+  display: block
+}
